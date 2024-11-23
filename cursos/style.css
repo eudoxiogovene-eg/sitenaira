@@ -160,6 +160,9 @@ nav{
 .beneficio__icon{
     width: 75px;
     height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--cor5);
     border-radius: 50%;
 }
@@ -440,8 +443,8 @@ nav{
 /*-------------------*/
 .conclusition__courses{
     width: 100%;
-    height: 500px;
-    margin-top: 30px;
+    height: 350px;
+    margin-top: 60px;
     background-color: var(--cor7);
     display: flex;
     justify-content: center;
@@ -462,9 +465,9 @@ nav{
 }
 
 .header__courses__conclusition h2{
-    font-size: 27px;
+    font-size: 22px;
     color: var(--cor5);
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 .cards__courses__concluisition__Benificents{
@@ -484,6 +487,10 @@ nav{
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);;
 }
 
+.card__course__conclusition__beneficent:hover{
+    cursor: pointer;
+    background-color: var(--cor9);
+}
 
 .card__course__conclusition__beneficent__icon{
     width: 60px;
@@ -500,5 +507,150 @@ nav{
 
 .card__course__conclusition__beneficent span{
     font-size: 17px;
+    color: var(--cor8);
+}
+
+
+/*-------------------------------------------------------------*/
+
+
+
+footer{
+    margin-top: 30px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--cor2);
+}
+
+.footer__container{
+    width: 1100px
+}
+
+.footer__container__content{
+    display: flex;
+    gap: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1.5px solid var(--cor1);
+}
+.footer__about{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer__about h1{
+    font-size: 30px;
+    text-transform: capitalize;
+    color: var(--cor7);
+    font-weight: bold;
+}
+.footer__about p{
+    line-height: 25px;
+    color: var(--cor8);
+}
+.footer__about__social__media{
+    display: flex;
+    gap: 15px;
+}
+.footer__about__social__media__area{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--cor7);
+}
+.footer__about__social__media__area:hover{
+    background-color: var(--cor8);
+    cursor: pointer;
+}
+.footer__links{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer__links h1{
+    font-size: 30px;
+    text-transform: capitalize;
+    color: var(--cor7);
+    font-weight: bold;
+}
+
+.footer__links__content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.footer__links__content a{
+    text-decoration: none;
+    color: var(--cor8);
+}
+
+.footer__contactos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer__contactos h1{
+    font-size: 30px;
+    text-transform: capitalize;
+    color: var(--cor7);
+    font-weight: bold;
+}
+
+.footer__contactos__content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--cor8);
+}
+
+.newsletter__footer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.newsletter__footer h1{
+    font-size: 30px;
+    text-transform: capitalize;
+    color: var(--cor7);
+    font-weight: bold;
+}
+.newsletter__footer p{
+    line-height: 25px;
+    color: var(--cor8);
+}
+
+.footer__form__container{
+    display: flex;
+}
+.newsletter__footer input{
+    padding: 8px;
+}
+
+.footer__form__container button{
+    width: 200px;
+    background-color: var(--cor1);
+    border: none;
+    color: var(--cor7);
+    font-weight: bold;
+}
+
+.footer__footer{
+    margin-top: 30px;
+}
+
+.footer__footer h1{
+    font-size: 18px;
     color: var(--cor8);
 }
