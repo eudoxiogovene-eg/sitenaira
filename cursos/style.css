@@ -14,13 +14,18 @@
     --cor7:#fff;
     --cor8:#ccc;
     --cor9:#f1f1f1;
+    --cor10:#f1f5f9;
+    --cor11:#c2410c;
+    --cor12:#eab308;
+    
+    
 }
 
 
 
 header{
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     background-color: var(--cor1);
     background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../assets/image8.jpg");
     background-repeat: no-repeat;
@@ -34,6 +39,10 @@ nav{
     border-bottom: 1px solid var(--cor2);
     display: flex;
     justify-content: center;
+    background-color: var(--cor1);
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
 
 .header__Container{
@@ -68,6 +77,11 @@ nav{
 .header__Container li a:hover{
     cursor: pointer;
     color: var(--cor7);
+    opacity: 100%;
+}
+.header__Container .selected{
+    color: var(--cor7);
+    font-weight: bold;
     opacity: 100%;
 }
 .login__button{
@@ -208,16 +222,19 @@ nav{
 .course__card__container{
     width: 350px;
     height: fit-content;
+    border: 1.2px solid var(--cor7);
     background-color: var(--cor0);
-    border: 1px solid var(--cor7);
     border-radius: 5px;
     overflow: hidden;
+    padding-bottom: 20px;
 }
 
 
 .course__card__container .course__card__header{
     width: 100%;
     height: 220px;
+    overflow: hidden;
+    border-radius: 5px;
 
 }
 
@@ -225,6 +242,7 @@ nav{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 5px;
 }
 
 .course__content{
@@ -237,13 +255,30 @@ nav{
 }
 
 .name__course__stars h2{
-    font-size: 22px;
+    font-size: 20px;
+    text-transform: capitalize;
     color: var(--cor8);
+    margin-top: 10px;
 }
 
-.name__course__stars span{
-    font-size: 12px;
+.name__course__stars {
+
+    font-size: 22px;
     color: var(--cor8);
+
+}
+
+.star__area{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.name__course__stars__star{
+    display: flex;
+    align-items: center;
+    color:var(--cor12) ;
+    font-size: 30px;
+    margin-top: 10px;
 }
 
 .course__info{
@@ -269,7 +304,7 @@ nav{
 
 .course__call__to__action__button{
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     background-color: var(--cor5);
     color: var(--cor7);
     font-weight: bold;
@@ -277,7 +312,10 @@ nav{
 }
 
 
-
+.course__call__to__action__button:hover{
+    background-color: var(--cor2);
+    cursor: pointer;
+}
 
 /*-------------------------*/
 .courses__info__dash__info{
@@ -321,14 +359,15 @@ nav{
 .course__info__dash__content span{
     color: var(--cor8);
 }
-
+/*---------------------------------*/
 .courses__categories{
     width: 100%;
     display: flex;
     margin-top: 30px;
     justify-content: center;
     height: fit-content;
-    background-color: var(--cor7);
+    background-color: var(--cor5);
+    padding: 40px  0;
 }
 
 .courses__categories__container{
@@ -345,7 +384,7 @@ nav{
 .header__categories h2{
     font-size: 24px;
     text-transform: capitalize;
-    color: var(--cor5);
+    color: var(--cor7);
     font-weight: bold;
 }
 .categories__cards{
@@ -359,20 +398,24 @@ nav{
 .category__card{
     width: 170px;
     padding: 10px;
-    background-color: var(--cor5);
+    background-color: var(--cor7);
     border-radius: 5px;
     text-align: center;
-    color: var(--cor7);
+    color: var(--cor5);
     font-weight: bold;
 }
-
+.category__card:hover{
+    cursor: pointer;
+    background-color: var(--cor9);
+}
+/*-----------------------------------------------------*/
 .mentor__experience{
     width: 100%;
     height: fit-content;
     margin-top: 50px;
     display: flex;
     justify-content: center;
-    background-color: var(--cor4);
+    background-color: var(--cor10);
     padding-bottom: 30px;
 }
 
@@ -391,63 +434,91 @@ nav{
 }
 
 .header__experience__mentor h2{
-    color: var(--cor7);
+    color: var(--cor5);
     text-transform: capitalize;
 }
-
+.header__experience__mentor span{
+    color: var(--cor5);
+    font-weight: bold;
+    text-align: center;
+}
 .container__cards__mentors{
     width: 90%;
-    display: grid;
-    grid-template-columns:repeat(3,1fr);
     margin-top: 20px;
     gap: 8px;
 }
 
-.card__mentor{
-    width: 340px;
-    height: fit-content;
-    background-color: var(--cor1);
-    padding-bottom: 20px;
+.profissionais__container__conponet{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 32px;
 }
 
-.mentor__image__content{
+.profissional__card__componet{
+    box-shadow: 0px 2px 4px 0px  rgba(0,0,0,0.4);
+    padding-bottom: 25px;
+}
+
+.profissional__card__componet__image{
     width: 100%;
-    height: 210px;
+    height: 205px;
 }
 
-.mentor__image__content img{
+.profissional__card__componet__image img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.footer__mentor{
+.profissionais__container__content__conponet{
+    padding: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
-    gap: 10px;
 }
 
-.footer__mentor h1{
-    font-size: 20px;
+.profissionais__container__content__conponet h2{
+    margin-top: 8px;
+    font-size: 24px;
+    color: var(--cor1);
     text-transform: capitalize;
+}
+
+.profissionais__container__content__conponet h3{
+    font-size: 20px;
+    margin-top: 12px;
+    color: var(--cor2);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.profissionais__container__content__conponet p{
+    margin-bottom: 16px;
+    text-align: center;
+    line-height: 22px;
+}
+
+.profissionais__container__content__conponet a{
+    background-color: var(--cor1);
+    color: var(--cor7);
+    font-size: 18px;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 40px;
+}
+.profissionais__container__content__conponet a:hover{
+    background-color: var(--cor5);
     color: var(--cor7);
 }
-
-.footer__mentor span{
-    color: var(--cor4);
-}
-
 
 /*-------------------*/
 .conclusition__courses{
     width: 100%;
-    height: 350px;
     margin-top: 60px;
-    background-color: var(--cor7);
+    background-color: var(--cor1);
     display: flex;
     justify-content: center;
+    padding: 40px 0;
 }
 
 .conclusition__courses__container{
@@ -464,9 +535,14 @@ nav{
     gap: 10px;
 }
 
+.header__courses__conclusition span{
+    color: var(--cor7);
+    font-weight: bold;
+}
+
 .header__courses__conclusition h2{
     font-size: 22px;
-    color: var(--cor5);
+    color: var(--cor7);
     text-transform: uppercase;
 }
 
@@ -480,7 +556,7 @@ nav{
     display: flex;
     flex-direction: column;
     gap: 12px;
-    background-color: var(--cor7);
+    background-color: var(--cor5);
     padding: 15px;
     border-radius: 5px;
     overflow: hidden;
@@ -489,20 +565,20 @@ nav{
 
 .card__course__conclusition__beneficent:hover{
     cursor: pointer;
-    background-color: var(--cor9);
+    background-color: var(--cor2);
 }
 
 .card__course__conclusition__beneficent__icon{
     width: 60px;
     height: 60px;
-    background-color: var(--cor1);
+    background-color: var(--cor7);
     border-radius: 100%;
 }
 
 .card__course__conclusition__beneficent h2{
     font-size: 20px;
     text-transform: capitalize;
-    color: var(--cor5);
+    color: var(--cor7);
 }
 
 .card__course__conclusition__beneficent span{
