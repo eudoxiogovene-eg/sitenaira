@@ -573,6 +573,9 @@ nav{
 .card__course__conclusition__beneficent__icon{
     width: 60px;
     height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--cor7);
     border-radius: 100%;
 }
