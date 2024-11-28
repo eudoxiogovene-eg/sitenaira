@@ -6,6 +6,7 @@
     <title>cursos</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <header>
@@ -38,10 +39,14 @@
             </div>
         </nav>
         <div class="content__header">
-            <div class="content__header__container">
-                <h1 class="title__header__top">Junte-se à Nossa Comunidade de Estudantes!</h1>
-                <h1 class="title__header__center">Aprenda Novas Habilidades, Compartilhe Ideias</h1>
-                <h1 class="title__header__bottom">O Conhecimento Está ao Seu Alcance!</h1>
+            <div class="content__header__container header__efeito">
+                <h1 class="title__header__top">Descubra nossos cursos e transforme seu futuro!</h1>
+                <h1 class="title__header__center">
+                     Oferecemos conteúdos atualizados, 
+                    práticos e acessíveis para impulsionar sua carreira.
+                    
+                </h1>
+                <h1 class="title__header__bottom">Conheça agora e dê o próximo passo rumo ao sucesso!</h1>
             </div>
         </div>
     </header>
@@ -231,24 +236,24 @@
     <div class="courses__info__dash__info">
         <div class="courses__info__dash__info__content">
             <div class="course__info__dash__content">
-                <h2>83</h2>
+                <h2>283</h2>
                 <div class="course__info__line"></div>
                 <span>cursos publicados</span>
             </div>
             <div class="course__info__dash__content">
-                <h2>83</h2>
+                <h2>383</h2>
                 <div class="course__info__line"></div>
-                <span>cursos publicados</span>
+                <span>materiais de estudo publicados</span>
             </div>
             <div class="course__info__dash__content">
-                <h2>83</h2>
+                <h2>834</h2>
                 <div class="course__info__line"></div>
-                <span>cursos publicados</span>
+                <span>profissionais de suporte</span>
             </div>
             <div class="course__info__dash__content">
-                <h2>83</h2>
+                <h2>183</h2>
                 <div class="course__info__line"></div>
-                <span>cursos publicados</span>
+                <span>materias gratuitos</span>
             </div>
         </div>
     </div>
@@ -519,5 +524,17 @@
     <script>
       lucide.createIcons();
     </script>
+
+<script>
+      
+    window.efeito= ScrollReveal({reset:true})
+
+    efeito.reveal('.header__efeito',{
+        duration:1000,
+        distance:'-90px',
+        delay:100
+    })
+
+</script>
 </body>
 </html>

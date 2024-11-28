@@ -121,6 +121,8 @@ nav{
 }
 .title__header__center{
     color: var(--cor7);
+    text-align: center;
+    font-size: 24px;
 }
 .title__header__bottom{
     font-size: 24px;
@@ -729,4 +731,11 @@ footer{
 .footer__footer h1{
     font-size: 18px;
     color: var(--cor8);
+}
+
+
+/*---------------------------------------------------*/
+
+.header__efeito{
+    visibility: hidden;
 }

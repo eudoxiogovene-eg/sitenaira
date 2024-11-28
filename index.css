@@ -119,6 +119,8 @@ nav{
     gap: 20px;
 }
 
+
+
 .title__header__top{
     font-size: 24px;
     color: var(--cor8);
@@ -625,4 +627,30 @@ footer{
 .footer__footer h1{
     font-size: 18px;
     color: var(--cor8);
+}
+
+
+/*------------------------------------------------------------*/
+
+
+.header__efeito{
+    visibility: hidden;
+}
+
+.header__container__info__content,.container__dash3,.container__dash1,.container__dash2{
+    visibility: hidden;
+}
+
+.content__container__info__one__box__left1__efeito,.content__container__info__two__box__left2__efeito{
+    visibility: hidden;
+}
+
+
+.content__container__info__one__info__right2__efeito,.content__container__info__one__info__right1__efeito{
+    visibility: hidden;
+}
+
+
+.header__price__content,.card__price__efeito1,.container__depoiments__content{
+    visibility: hidden;
 }

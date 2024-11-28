@@ -6,6 +6,7 @@
     <title>site de estudante</title>
     <link rel="stylesheet" href="index.css">
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <header>
@@ -38,7 +39,7 @@
             </div>
         </nav>
         <div class="content__header">
-            <div class="content__header__container">
+            <div class="content__header__container header__efeito">
                 <h1 class="title__header__top">Junte-se à Nossa Comunidade de Estudantes!</h1>
                 <h1 class="title__header__center">Aprenda Novas Habilidades, Compartilhe Ideias</h1>
                 <h1 class="title__header__bottom">O Conhecimento Está ao Seu Alcance!</h1>
@@ -60,7 +61,7 @@
                   </p>
               </div>
               <div class="container__info__content__dash">
-                  <div class="container__dash">
+                  <div class="container__dash container__dash1">
                       <h2>35</h2>
                       <div class="container__dash__content">
                           <i  color="#444860" data-lucide="user2"></i>
@@ -70,7 +71,7 @@
                           <span>ver mais</span>
                       </div>
                   </div>
-                  <div class="container__dash">
+                  <div class="container__dash container__dash2">
                       <h2>234</h2>
                       <div class="container__dash__content">
                           <i  color="#444860" data-lucide="user"></i>
@@ -80,7 +81,7 @@
                           <span>ver mais</span>
                       </div>
                   </div>
-                  <div class="container__dash">
+                  <div class="container__dash container__dash3">
                       <h2>14</h2>
                       <div class="container__dash__content">
                           <i  color="#444860" data-lucide="school"></i>
@@ -95,10 +96,10 @@
         </div>
         <div class="conteiner__info__one">
             <div class="content__container__info__one">
-                <div class="content__container__info__one__box__left">
+                <div class="content__container__info__one__box__left content__container__info__one__box__left1__efeito">
                     <img src="./assets/image8.jpg" alt="">
                 </div>
-                <div class="content__container__info__one__info__right">
+                <div class="content__container__info__one__info__right content__container__info__one__info__right1__efeito">
                     <h2>a melhor forma de aprender  é praticando</h2>
                     <p>
                         A melhor forma de aprender é praticando – e nossa plataforma foi feita para isso!
@@ -113,10 +114,10 @@
         </div>
         <div class="conteiner__info__two ">
             <div class="content__container__info__two">
-                <div class="content__container__info__two__box__left">
+                <div class="content__container__info__two__box__left content__container__info__two__box__left2__efeito">
                     <img src="./assets/image10.jpg" alt="">
                 </div>
-                <div class="content__container__info__one__info__right">
+                <div class="content__container__info__one__info__right content__container__info__one__info__right2__efeito ">
                     <h2>Aprenda Rápido com nossas vídeo aulas</h2>
                     <p>
                         Nossa plataforma oferece videoaulas dinâmicas e focadas,
@@ -138,7 +139,7 @@
             <div class="conatiner__price">
                 
                 <div class="conatiner__Content__card__Price">
-                    <div class="card__price">
+                    <div class="card__price card__price__efeito1">
                         <span class="plain__name">Mensal</span>
                         <span class="plain__price">1200mzn</span>
                         <div class="button__call__to__action">
@@ -183,7 +184,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card__price plain__item__center">
+                    <div class="card__price plain__item__center card__price__efeito1">
                         <span class="plain__name">Anual</span>
                         <span class="plain__price">1200mzn</span>
                         <div class="button__call__to__action">
@@ -234,7 +235,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card__price">
+                    <div class="card__price card__price__efeito1">
                         <span class="plain__name">Semestral</span>
                         <span class="plain__price">1200mzn</span>
                         <div class="button__call__to__action">
@@ -421,6 +422,88 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
       lucide.createIcons();
+    </script>
+
+    <script>
+      
+        window.efeito= ScrollReveal({reset:true})
+
+        efeito.reveal('.header__efeito',{
+            duration:1000,
+            distance:'-90px',
+            delay:100
+        })
+   
+        efeito.reveal('.header__container__info__content',{
+            duration:1000,
+            distance:'-90px',
+            delay:100
+        })
+
+        efeito.reveal('.container__dash1',{
+            duration:1000,
+            distance:'90px',
+            delay:100,
+            origin:"left"
+        })
+        efeito.reveal('.container__dash2',{
+            duration:1000,
+            distance:'90px',
+            delay:300,
+            origin:"bottom"
+        })
+        efeito.reveal('.container__dash3',{
+            duration:1000,
+            distance:'90px',
+            delay:100,
+            origin:"right"
+        })
+
+        efeito.reveal('.content__container__info__one__box__left1__efeito',{
+            duration:1000,
+            distance:'90px',
+            delay:100,
+            origin:"left"
+        })
+        efeito.reveal('.content__container__info__one__info__right1__efeito',{
+            duration:1000,
+            distance:'90px',
+            delay:600,
+            origin:"right"
+        })
+
+        efeito.reveal('.content__container__info__one__info__right2__efeito',{
+            duration:1000,
+            distance:'90px',
+            delay:100,
+            origin:"left"
+        })
+        
+        efeito.reveal('.content__container__info__two__box__left2__efeito',{
+            duration:1000,
+            distance:'90px',
+            delay:600,
+            origin:"right"
+        })
+        efeito.reveal('.header__price__content',{
+            duration:1000,
+            distance:'-90px',
+            delay:100
+        })
+        efeito.reveal('.card__price__efeito1',{
+            duration:1000,
+            distance:'-90px',
+            delay:250
+        })
+    
+        efeito.reveal('.container__depoiments__content',{
+            duration:1000,
+            distance:'-90px',
+            delay:400
+        })
+       
+        
+        
     </script>
 </body>
 </html>
