@@ -406,6 +406,11 @@ nav{
     font-weight: bold;
     color: var(--cor1);
 }
+.noticia__titulo:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--cor11);
+}
 
 .noticia__conteudo p{
     font-size: 17px;
