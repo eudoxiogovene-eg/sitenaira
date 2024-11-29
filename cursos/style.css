@@ -272,15 +272,17 @@ nav{
 
 .star__area{
     display: flex;
-    align-items: center;
-    gap: 8px;
+    gap: 3px;
+}
+.curso__star__number{
+   margin-top: 12px;
 }
 .name__course__stars__star{
     display: flex;
     align-items: center;
     color:var(--cor12) ;
     font-size: 30px;
-    margin-top: 10px;
+    
 }
 
 .course__info{
@@ -311,6 +313,7 @@ nav{
 
 .course__call__to__action__button{
     width: 100%;
+    text-transform: capitalize;
     padding: 10px;
     background-color: var(--cor5);
     color: var(--cor7);
