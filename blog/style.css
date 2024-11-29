@@ -175,6 +175,12 @@ nav{
     font-weight: bold;
 }
 
+.container__recents__post__content__left__content h1:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--cor8);
+}
+
 .container__recents__post__content__left__content p{
     color: var(--cor5);
     font-size: 18px;
@@ -218,6 +224,13 @@ nav{
     text-transform: capitalize;
     color: var(--cor1);
 }
+.container__recents__right__card__content h2:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--cor8);
+}
+
+
 
 .container__recents__right__card__content span{
     color: var(--cor8);
@@ -258,6 +271,12 @@ nav{
     font-size: 17px;
     text-transform: capitalize;
     color: var(--cor1);
+}
+
+.container__recents__bottom__card__content h2:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--cor8);
 }
 .container__recents__bottom__card__content span{
     color: var(--cor8);
