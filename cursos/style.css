@@ -298,6 +298,11 @@ nav{
     font-weight: 100;
 }
 
+.course__info span{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
 .course__call__to__action{
     display: flex;
     padding: 10px 5px; 
