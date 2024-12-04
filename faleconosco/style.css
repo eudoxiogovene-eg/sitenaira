@@ -150,6 +150,10 @@ main{
     height: 400px;
     background-color: var(--cor8);
     border-radius: 5px;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../assets/image24.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 
