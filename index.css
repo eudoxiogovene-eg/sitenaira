@@ -355,6 +355,7 @@ nav{
     font-weight: bold;
     border-radius: 5px;
     padding: 12px;
+    text-decoration: none;
 }
 .button__call__to__action:hover{
     cursor: pointer;

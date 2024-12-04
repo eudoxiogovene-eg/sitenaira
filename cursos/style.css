@@ -327,6 +327,7 @@ nav{
     color: var(--cor7);
     font-weight: bold;
     border-radius: 3px;
+    text-decoration: none;
 }
 
 
